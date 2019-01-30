@@ -12,5 +12,14 @@
   "dependencies": {
     "express": "^4.16.4",
     "hbs": "^4.0.0"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ashraf-husain/learn-express.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ashraf-husain/learn-express/issues"
+  },
+  "homepage": "https://github.com/ashraf-husain/learn-express#readme"
 }
