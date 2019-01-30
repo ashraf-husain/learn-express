@@ -2,6 +2,7 @@
 const express = require('express');
 const hbs = require('hbs');
 const fs = require('fs');
+const port = process.env.PORT || 3000;
 
 var app = express();
 
@@ -23,9 +24,9 @@ if(error) {
  next();
 })
 
-app.use((req, res, next) => {
- res.render('maintanance.hbs');
-});
+// app.use((req, res, next) => {
+//  res.render('maintanance.hbs');
+// });
 
 app.use(express.static(__dirname + '/public'));
 
@@ -56,6 +57,6 @@ app.get('/bad',(req,res) => {
     })
 })
 
-app.listen(4000,() =>{
-    console.log('server is upto on port 4000');
+app.listen(port,() =>{
+    console.log(`server is upto on port ${port}`);
 });
